@@ -1,0 +1,431 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {   margin: 0;
+    padding: 0;
+	box-sizing: border-box; }
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding:10px;
+  background-color: #fff;
+  font-family: 'Roboto' , sans-serifl
+}
+
+/* STRUCTURE */
+h1 {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+.wrapper {
+    padding: 5px;
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 10px;
+}
+
+aside{
+	float: right;
+    position: relative;
+    width: 30%;
+}
+
+header {
+	padding: 0 15px;
+}
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+	padding:15px 15px;
+}
+
+.column {
+	flex: auto;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	width: 35%;
+	position: relative;
+}
+
+footer {
+	padding: 0 15px;
+}
+
+.container-fluid{
+margin: auto;
+}
+.caption{
+font-size:18px;
+color: #000;
+padding:10px 10px ;
+}	
+	
+#header-wrapper{
+position: relative;
+background-color: #f3f3f3;
+height: 50px;
+margin: 15px 15px;
+}
+
+.col{
+float: left;
+}
+
+.col-3{
+width :25%;
+padding-left: 15px;
+padding-right: 15px;
+}
+.col-8{
+width: 60%;
+}
+.col-4{
+width: 40%;
+}
+.col-6{
+width: 50%;
+}
+.col-9{
+width: 75%;
+}					
+
+.col-12{
+width: 100%;
+padding-bottom: 15px;
+}
+
+.panel{
+background-color:#c4eeee;
+height: 520px;
+}
+	.img-layout		{
+width: 100%;
+    height: 160px;
+    border-bottom: 1px solid rgba(45, 45, 45, 0.33);
+}
+
+.img-layout img {
+       position: absolute;
+    left: 45px;
+    right: 45px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #e7e7e7;
+}
+.offer-display{
+       background-color: #02b102;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    font-size: 16px;
+    padding: 1px 4px;
+    box-shadow: 1px 2px 2px 1px #919591c4;
+}	
+.cart-footer {
+    margin-top: 15px;
+}	
+
+.cart-footer p {
+    display: inline-block;
+	font-weight: 600;
+}
+
+.cart-footer button {
+    color: #037580;
+    text-transform: unset;
+    font-size: 12.5px;
+    margin-top: -3px;
+    float: right;
+    border-radius: 0;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    border: 1px solid #089393;
+    box-shadow: 1px 1px 3px 0px #d3cbcb;
+	cursor: pointer;
+}
+
+.item-display-price{
+	margin-right: 5px;
+	text-decoration: line-through;
+	 font-size: 14px;
+	text-decoration-color: red;
+}
+.btn:hover {
+    background: #c4eeee;
+    color: #1a1a1a;
+    border-color: #00baba;
+}
+.btn:focus{
+	outline: 0;
+}
+
+.shopping-cart{
+  width: 450px;
+  height: auto;
+  margin: 0em auto;
+  background: #FFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 0.5em;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+/* item styling */
+.title{
+  height: 3.75em;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 1.25em 1.75em;
+  color: #5E6977;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+.item{
+  padding: 1.25em 0.75em;
+  height: 7.5em;
+  display: flex;
+}
+.item:nth-child(3) {
+  border-top: 1px solid #E1E8EE;
+  border-bottom: 1px solid #E1E8EE;
+}
+
+.buttons{
+  position: relative;
+  padding-top: 1.75em;
+    margin-right: 1em;
+}
+.delete-btn{
+  display: inline-block;
+  cursor: pointer;
+}
+.delete-btn{
+  width: 18px;
+  height: 17px;
+  background: url("https://designmodo.com/demo/shopping-cart/delete-icn.svg") no-repeat center;
+}
+.image{
+  margin-right: 20px;
+}
+.description{
+  padding-top: 10px;
+  margin-right: 20px;
+     width: 70px;
+    word-break: break-all;
+}
+.description span{
+  display: block;
+  font-size: 1em;
+  color: #43484D;
+  font-weight: 400;
+}
+.description span:first-child{
+  margin-bottom: 5px;
+}
+.description span:last-child{
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+.quantity{
+  padding-top: 20px;
+  margin-right: -5px;
+}
+.quantity input{
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 1em;
+  color: #43484D;
+  font-weight: 300;
+}
+button[class*=plus-btn],button[class*=minus-btn]  {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img{
+  margin-bottom: 3px;
+}
+.plus-btn img{
+  margin-top: 2px;
+}
+
+button:focus,
+input:focus{
+  outline: 0;
+}
+
+.total-price{
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 1em;
+  color: #43484D;
+  font-weight: 300;
+}
+.empty-cart-message {
+    height: 50px;
+    width: 100%;
+    background: #f7f7f7;
+    padding: 1em 1em;
+    border: 1px solid #a9a95d;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.purchase{
+	color: #037580;
+    text-transform: unset;
+    font-size: 20px;
+    margin-top: 30px;
+    float: right;
+    border-radius: 0;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    border: 1px solid #089393;
+    box-shadow: 1px 1px 3px 0px #d3cbcb;
+    cursor: pointer;
+    width: 50%;
+    margin: 15px auto;
+}
+
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+.container p {
+    margin: 10px 10px;
+}
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout -  */
+/* media queries */
+/* Tablet devices */
+
+@media screen and (max-width:768px) {
+
+#header-wrapper{
+height: 60px;
+}
+.col-6{
+width: 75%;
+}
+.col-12{
+padding-right: 15px;
+}
+.right{
+width: 100%;
+}
+.col-3{
+padding-bottom: 15px;
+}
+.panel-label{
+height: 35px;
+}
+}
+@media screen and (max-width:668px) {
+
+#header-wrapper{
+height: 50px;
+}
+.col{
+width: 100%;
+}
+.col-12{
+padding-left: 15px;
+}
+.col-3{
+padding-bottom: 15px;
+}
+.panel,.panel-body{
+height: 300px;
+}
+}
+									
+@media (max-width: 800px) {
+  .shopping-cart{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img{
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description{
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons{
+    margin-right: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 980px) {
+  section .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	section .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
